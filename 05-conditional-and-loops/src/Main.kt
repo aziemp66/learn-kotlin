@@ -66,4 +66,18 @@ fun main() {
     println("Count $i")
     i++
   } while (i <= 10)
+
+  var b = 0
+  while (true) {
+    i++
+    if (i > 100) {
+      println("Broken")
+      break
+    }
+  }
+
+  for (c in 1..10) {
+    if (c % 2 == 0) continue
+    println(c)
+  }
 }
